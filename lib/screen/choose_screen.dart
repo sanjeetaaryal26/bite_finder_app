@@ -27,6 +27,7 @@ class BiteWelcomePage extends StatelessWidget {
               ),
             ),
             const Spacer(),
+
             // Buttons row
             Padding(
               padding: const EdgeInsets.only(bottom: 24),
@@ -44,6 +45,7 @@ class BiteWelcomePage extends StatelessWidget {
                       );
                     },
                   ),
+
                   const SizedBox(width: 16),
                   _bottomButton(
                     label: 'Sign up',
@@ -73,8 +75,9 @@ Widget _bottomButton({required String label, required VoidCallback onTap}) {
       padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 10),
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.circular(22),
+        borderRadius: BorderRadius.circular(21),
       ),
+
       child: Text(
         label,
         style: const TextStyle(
