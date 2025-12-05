@@ -16,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   void _navigateToOnboarding() {
-    Future.delayed(const Duration(seconds: 2), () {
+    Future.delayed(const Duration(seconds: 3), () {
       if (mounted) {
         Navigator.pushReplacement(
           context,
@@ -44,6 +44,9 @@ class _SplashScreenState extends State<SplashScreen> {
                 fontFamily: 'Roboto', // Use custom font if required
               ),
             ),
+
+
+
 
             // Curved underline shape (made using Container)
             Transform.translate(
